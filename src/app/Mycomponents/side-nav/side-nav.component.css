@@ -1,0 +1,119 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    background-color: #297c81; /* Dark background color */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #16a085; /* Accent border */
+    align-items: center;
+    justify-content: space-between; /* Aligns items to the left and right */
+    position: relative;
+    height: 50px; /* Adjust height if needed */
+}
+
+/* Navbar Heading Styles (Centered) */
+.navbar-heading {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 30px;
+    color: #ecf0f1; /* Light text color */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    position: absolute; /* Absolute positioning to keep it centered */
+    left: 50%; /* Move it 50% from the left */
+    transform: translateX(-50%); /* Centering by shifting 50% of the element's width back */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-heading:hover {
+    color: #1abc9c; /* Hover effect color *//* Slightly enlarges on hover */
+}
+
+/* General container style for the toggle button */
+.toggle-button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #297c81; /* Background color as requested */
+    color: white;
+    border-radius: 50%; /* Make the button round */
+    width: 30px; /* Set the width and height equal to make it a perfect circle */
+    height: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button-row:hover {
+    background-color: #e2e8e9; /* Hover effect */
+    color: #297c81;
+}
+
+.mat-icon {
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.toggle-button-row:active .mat-icon {
+    transform: rotate(90deg); /* Rotate the icon when clicked (optional) */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-heading {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggle-button-row {
+        width: 40px;
+        height: 40px; /* Adjust size for smaller screens */
+    }
+
+    .mat-icon {
+        font-size: 20px; /* Adjust icon size on mobile */
+    }
+}
+
+.slide-out-panel {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(135deg, #008080, #80ced6);
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slide-out-panel.slide-out {
+    transform: translateX(-100%);
+  }
+  
+  .slide-out-content {
+    margin-top: 80px;
+    padding: 20px;
+  }
+  .edit-col {
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .edit-col:hover {
+    color: #008080;
+  }
+  

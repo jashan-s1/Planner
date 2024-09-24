@@ -1,0 +1,64 @@
+/* About Page Container */
+.about-container {
+    text-align: center;
+    margin-top: 190px;
+    margin-left: 340px;
+    padding: 20px;
+    background-color: #f4f6f9; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    
+  }
+  
+  /* Welcome Heading */
+  .welcome-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #34495e; /* Darker text color */
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Welcome Text */
+  .welcome-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #7f8c8d; /* Lighter text color */
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: #16a085; /* Green button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #1abc9c; /* Lighter green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .welcome-heading {
+      font-size: 28px;
+    }
+  
+    .welcome-text {
+      font-size: 16px;
+    }
+  
+    .login-btn {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+  }
+  
